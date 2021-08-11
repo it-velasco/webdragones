@@ -12,6 +12,7 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<link rel="icon" type="logo" href="images/logo4.jpeg"/>
+		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
 	</head>
 	<body class="is-preload">
 
@@ -20,7 +21,7 @@
 
 				<!-- Intro -->
 					<div id="intro">
-						<h1><img src="images/logo4.jpeg" height="40%" alt=""><br /> Club de Baloncesto<br />
+						<h1><img src="images/logo4.jpeg" width="50%" alt=""><br /> Club de Baloncesto<br />
 						Dragones</h1>
 						<p>WE ARE <strong>FAMILY</strong>.<br/> El Club de Baloncesto Dragones es una familia, un equipo! Competimos por los sueños de la juventud colombiana.</p>
 						
@@ -162,6 +163,27 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+		<!-- Scripts Cookies -->
+			<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+			<script>
+			window.cookieconsent.initialise({
+			"palette": {
+				"popup": {
+				"background": "#000"
+				},
+				"button": {
+				"background": "#f1d600"
+				}
+			},
+			"content": {
+				"message": "Este Sitio web usa solamente las Cookies necesarias para garantizar su funcionamiento. ",
+				"dismiss": "Entendido!",
+				"link": "Más información (En Inglés)."
+			}
+			});
+			</script>
+
+
 
 	</body>
 </html>
