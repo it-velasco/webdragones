@@ -1,22 +1,23 @@
+
 /*
 *
-*This code belongs to https://github.com/florinpop17. Thank you!!
+*This javaScript code belongs to https://github.com/florinpop17. Thank you!!
 *
 */
-function createHeart() {
-    const heart = document.createElement("div");
-    heart.classList.add("heart");
+function createBall() {
+    const ball = document.createElement("div");
+    ball.classList.add("ball");
 
-    heart.style.left = Math.random() * 100 + "vw";
-    heart.style.animationDuration = Math.random() * 2 + 3 + "s";
+    ball.style.left = Math.random() * 100 + "vw";
+    ball.style.animationDuration = Math.random() * 2 + 3 + "s";
 
-    heart.innerText = "🏀";
+    ball.innerText = "🏀";
 
-    document.body.appendChild(heart);
+    document.body.appendChild(ball);
 
     setTimeout(() => {
-        heart.remove();
+        ball.remove();
     }, 5000);
 }
 
-setInterval(createHeart, 300);
+setInterval(createBall, 300);
